@@ -1,4 +1,4 @@
-package com.oswin.miniproject.models;
+package com.shreyas.miniproject.models;
 
 /**
  * BillEntry represents a line item in a booking's bill.
@@ -62,3 +62,4 @@ public class BillEntry {
         return new BillEntry(service, quantity, addedOn);
     }
 }
+

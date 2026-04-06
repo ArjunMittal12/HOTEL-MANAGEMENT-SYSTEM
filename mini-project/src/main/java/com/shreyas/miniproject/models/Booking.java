@@ -1,4 +1,4 @@
-package com.oswin.miniproject.models;
+package com.shreyas.miniproject.models;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -134,3 +134,4 @@ public class Booking {
         return booking;
     }
 }
+

@@ -1,4 +1,4 @@
-package com.oswin.miniproject.models;
+package com.shreyas.miniproject.models;
 
 /**
  * Payment record for a booking.
@@ -81,3 +81,4 @@ public class Payment {
         return payment;
     }
 }
+

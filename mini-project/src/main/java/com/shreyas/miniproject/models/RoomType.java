@@ -1,4 +1,4 @@
-package com.oswin.miniproject.models;
+package com.shreyas.miniproject.models;
 
 public enum RoomType {
     STANDARD(1500),
@@ -22,3 +22,4 @@ public enum RoomType {
         return basePrice * nights;
     }
 }
+

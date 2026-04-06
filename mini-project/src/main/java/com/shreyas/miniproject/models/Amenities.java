@@ -1,4 +1,4 @@
-package com.oswin.miniproject.models;
+package com.shreyas.miniproject.models;
 
 /**
  * Interface defining amenities available in different room types.
@@ -18,3 +18,4 @@ public interface Amenities {
         return result.isEmpty() ? "None" : result.substring(0, result.length() - 2);
     }
 }
+

@@ -1,10 +1,10 @@
-package com.oswin.miniproject;
+package com.shreyas.miniproject;
 
 import java.io.IOException;
 import java.net.URL;
 
-import com.oswin.miniproject.controller.MainViewController;
-import com.oswin.miniproject.service.HotelService;
+import com.shreyas.miniproject.controller.MainViewController;
+import com.shreyas.miniproject.service.HotelService;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -36,3 +36,4 @@ public class HotelApp extends Application {
         launch(args);
     }
 }
+

@@ -1,10 +1,10 @@
-package com.oswin.miniproject.controller;
+package com.shreyas.miniproject.controller;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-import com.oswin.miniproject.HotelApp;
-import com.oswin.miniproject.util.AlertHelper;
+import com.shreyas.miniproject.HotelApp;
+import com.shreyas.miniproject.util.AlertHelper;
 
 import javafx.geometry.Insets;
 import javafx.scene.control.Label;
@@ -14,6 +14,7 @@ import javafx.scene.control.MenuItem;
 import javafx.scene.control.SeparatorMenuItem;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
+import javafx.concurrent.Task;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
@@ -25,6 +26,7 @@ import javafx.scene.layout.Region;
 public class MainViewController {
 
     private Label statusLabel, dateTimeLabel;
+    private MenuItem refreshItem;
     private RoomsController roomsIncludeController;
     private GuestsController guestsIncludeController;
     private BookingsController bookingsIncludeController;
@@ -57,7 +59,7 @@ public class MainViewController {
 
         // File Menu
         Menu fileMenu = new Menu("File");
-        MenuItem refreshItem = new MenuItem("Refresh Data");
+        refreshItem = new MenuItem("Refresh Data");
         refreshItem.setOnAction(e -> handleRefresh());
         fileMenu.getItems().add(refreshItem);
         fileMenu.getItems().add(new SeparatorMenuItem());
@@ -125,21 +127,48 @@ public class MainViewController {
     }
 
     private void handleRefresh() {
-        HotelApp.getHotelService().loadAllData();
-        if (roomsIncludeController != null) {
-            roomsIncludeController.refreshView();
-        }
-        if (guestsIncludeController != null) {
-            guestsIncludeController.refreshView();
-        }
-        if (bookingsIncludeController != null) {
-            bookingsIncludeController.refreshView();
-        }
-        if (billingIncludeController != null) {
-            billingIncludeController.refreshView();
-        }
-        statusLabel.setText("Data refreshed");
-        AlertHelper.showSuccess("Success", "All data reloaded from storage.");
+        refreshItem.setDisable(true);
+        statusLabel.setText("Refreshing data...");
+
+        Task<Void> refreshTask = new Task<>() {
+            @Override
+            protected Void call() {
+                HotelApp.getHotelService().loadAllData();
+                return null;
+            }
+        };
+
+        refreshTask.setOnSucceeded(event -> {
+            if (roomsIncludeController != null) {
+                roomsIncludeController.refreshView();
+            }
+            if (guestsIncludeController != null) {
+                guestsIncludeController.refreshView();
+            }
+            if (bookingsIncludeController != null) {
+                bookingsIncludeController.refreshView();
+            }
+            if (billingIncludeController != null) {
+                billingIncludeController.refreshView();
+            }
+            statusLabel.setText("Data refreshed");
+            refreshItem.setDisable(false);
+            AlertHelper.showSuccess("Success", "All data reloaded from storage.");
+        });
+
+        refreshTask.setOnFailed(event -> {
+            statusLabel.setText("Refresh failed");
+            refreshItem.setDisable(false);
+            Throwable ex = refreshTask.getException();
+            String message = (ex != null && ex.getMessage() != null)
+                ? ex.getMessage()
+                : "Unable to refresh data.";
+            AlertHelper.showError("Error", message);
+        });
+
+        Thread refreshThread = new Thread(refreshTask, "hotel-refresh-thread");
+        refreshThread.setDaemon(true);
+        refreshThread.start();
     }
 
     private void handleExit() {
@@ -158,3 +187,4 @@ public class MainViewController {
         dateTimeLabel.setText(LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd MMM yyyy  HH:mm:ss")));
     }
 }
+

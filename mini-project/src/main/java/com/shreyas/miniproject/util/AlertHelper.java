@@ -1,4 +1,4 @@
-package com.oswin.miniproject.util;
+package com.shreyas.miniproject.util;
 
 import java.net.URL;
 
@@ -49,3 +49,4 @@ public class AlertHelper {
         dialog.getDialogPane().getStyleClass().add("dark-dialog");
     }
 }
+

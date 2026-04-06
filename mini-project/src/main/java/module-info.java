@@ -1,10 +1,11 @@
-module com.oswin.miniproject {
+module com.shreyas.miniproject {
     requires transitive javafx.controls;
     requires javafx.graphics;
 
-    exports com.oswin.miniproject;
-    exports com.oswin.miniproject.service;
-    exports com.oswin.miniproject.models;
-    exports com.oswin.miniproject.controller;
-    exports com.oswin.miniproject.util;
+    exports com.shreyas.miniproject;
+    exports com.shreyas.miniproject.service;
+    exports com.shreyas.miniproject.models;
+    exports com.shreyas.miniproject.controller;
+    exports com.shreyas.miniproject.util;
 }
+

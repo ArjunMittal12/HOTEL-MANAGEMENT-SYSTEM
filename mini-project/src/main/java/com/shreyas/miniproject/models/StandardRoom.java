@@ -1,4 +1,4 @@
-package com.oswin.miniproject.models;
+package com.shreyas.miniproject.models;
 
 /**
  * Standard room: simple price × nights, no amenities.
@@ -34,3 +34,4 @@ public class StandardRoom extends Room {
         return false;
     }
 }
+

@@ -1,14 +1,14 @@
-package com.oswin.miniproject.controller;
+package com.shreyas.miniproject.controller;
 
 import java.util.Arrays;
 
-import com.oswin.miniproject.HotelApp;
-import com.oswin.miniproject.models.DeluxeRoom;
-import com.oswin.miniproject.models.Room;
-import com.oswin.miniproject.models.StandardRoom;
-import com.oswin.miniproject.models.SuiteRoom;
-import com.oswin.miniproject.service.HotelService;
-import com.oswin.miniproject.util.AlertHelper;
+import com.shreyas.miniproject.HotelApp;
+import com.shreyas.miniproject.models.DeluxeRoom;
+import com.shreyas.miniproject.models.Room;
+import com.shreyas.miniproject.models.StandardRoom;
+import com.shreyas.miniproject.models.SuiteRoom;
+import com.shreyas.miniproject.service.HotelService;
+import com.shreyas.miniproject.util.AlertHelper;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -280,3 +280,4 @@ public class RoomsController {
         return val.toString();
     }
 }
+

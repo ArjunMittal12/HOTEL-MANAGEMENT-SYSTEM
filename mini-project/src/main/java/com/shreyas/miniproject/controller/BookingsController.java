@@ -1,14 +1,14 @@
-package com.oswin.miniproject.controller;
+package com.shreyas.miniproject.controller;
 
 import java.time.LocalDate;
 import java.util.Arrays;
 
-import com.oswin.miniproject.HotelApp;
-import com.oswin.miniproject.models.Booking;
-import com.oswin.miniproject.models.Guest;
-import com.oswin.miniproject.models.Room;
-import com.oswin.miniproject.service.HotelService;
-import com.oswin.miniproject.util.AlertHelper;
+import com.shreyas.miniproject.HotelApp;
+import com.shreyas.miniproject.models.Booking;
+import com.shreyas.miniproject.models.Guest;
+import com.shreyas.miniproject.models.Room;
+import com.shreyas.miniproject.service.HotelService;
+import com.shreyas.miniproject.util.AlertHelper;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -302,3 +302,4 @@ public class BookingsController {
         return val.toString();
     }
 }
+

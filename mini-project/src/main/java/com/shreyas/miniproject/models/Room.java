@@ -1,4 +1,4 @@
-package com.oswin.miniproject.models;
+package com.shreyas.miniproject.models;
 
 /**
  * Abstract base class for hotel rooms.
@@ -100,3 +100,4 @@ public abstract class Room implements Amenities {
         this.available = available;
     }
 }
+

@@ -1,4 +1,4 @@
-package com.oswin.miniproject.models;
+package com.shreyas.miniproject.models;
 
 /**
  * Deluxe room: base price + 10% surcharge for WiFi and AC.
@@ -37,3 +37,4 @@ public class DeluxeRoom extends Room {
         return false;
     }
 }
+

@@ -1,4 +1,4 @@
-package com.oswin.miniproject.models;
+package com.shreyas.miniproject.models;
 
 /**
  * Suite room: base price + 20% surcharge for full amenities.
@@ -37,3 +37,4 @@ public class SuiteRoom extends Room {
         return true;
     }
 }
+

@@ -1,11 +1,11 @@
-package com.oswin.miniproject.controller;
+package com.shreyas.miniproject.controller;
 
 import java.util.Arrays;
 
-import com.oswin.miniproject.HotelApp;
-import com.oswin.miniproject.models.Guest;
-import com.oswin.miniproject.service.HotelService;
-import com.oswin.miniproject.util.AlertHelper;
+import com.shreyas.miniproject.HotelApp;
+import com.shreyas.miniproject.models.Guest;
+import com.shreyas.miniproject.service.HotelService;
+import com.shreyas.miniproject.util.AlertHelper;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -237,3 +237,4 @@ public class GuestsController {
         return email.matches("^[A-Za-z0-9._-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$");
     }
 }
+

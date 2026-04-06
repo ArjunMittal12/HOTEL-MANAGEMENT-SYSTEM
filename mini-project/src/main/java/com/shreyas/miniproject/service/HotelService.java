@@ -1,7 +1,7 @@
-package com.oswin.miniproject.service;
+package com.shreyas.miniproject.service;
 
-import com.oswin.miniproject.models.*;
-import com.oswin.miniproject.storage.FileStorageManager;
+import com.shreyas.miniproject.models.*;
+import com.shreyas.miniproject.storage.FileStorageManager;
 import java.time.LocalDate;
 import java.util.*;
 
@@ -263,3 +263,4 @@ public class HotelService {
         return new ArrayList<>(bookings);
     }
 }
+

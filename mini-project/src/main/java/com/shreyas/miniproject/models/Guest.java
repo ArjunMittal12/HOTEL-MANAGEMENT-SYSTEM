@@ -1,4 +1,4 @@
-package com.oswin.miniproject.models;
+package com.shreyas.miniproject.models;
 
 /**
  * Guest represents a hotel guest with contact information.
@@ -121,4 +121,5 @@ public class Guest {
         return guest;
     }
 }
+
 

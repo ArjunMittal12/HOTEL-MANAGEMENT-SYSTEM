@@ -1,4 +1,4 @@
-package com.oswin.miniproject.models;
+package com.shreyas.miniproject.models;
 
 /**
  * ServiceItem enum for itemised billing.
@@ -44,3 +44,4 @@ public enum ServiceItem {
         return String.format("%s (₹%.2f)", displayName, unitPrice);
     }
 }
+
