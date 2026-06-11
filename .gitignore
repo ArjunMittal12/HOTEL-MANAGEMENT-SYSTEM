@@ -1,0 +1,19 @@
+# Maven / Java
+target/
+*.class
+*.log
+
+# IntelliJ / VSCode
+*.iml
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
+
+# OS / Editor temporary files
+*~
+*.swp
+
+# Ignore build output inside mini-project
+/mini-project/target/

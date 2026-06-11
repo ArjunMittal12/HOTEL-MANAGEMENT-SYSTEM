@@ -1,4 +1,4 @@
-package com.shreyas.miniproject.models;
+package com.arjun.miniproject.models;
 
 /**
  * Interface defining amenities available in different room types.

@@ -1,4 +1,4 @@
-package com.shreyas.miniproject.models;
+package com.arjun.miniproject.models;
 
 /**
  * Guest represents a hotel guest with contact information.

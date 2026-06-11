@@ -1,4 +1,4 @@
-package com.shreyas.miniproject.models;
+package com.arjun.miniproject.models;
 
 /**
  * ServiceItem enum for itemised billing.

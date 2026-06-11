@@ -1,4 +1,4 @@
-package com.shreyas.miniproject.models;
+package com.arjun.miniproject.models;
 
 /**
  * Suite room: base price + 20% surcharge for full amenities.

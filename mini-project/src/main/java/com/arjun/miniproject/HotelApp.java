@@ -1,10 +1,10 @@
-package com.shreyas.miniproject;
+package com.arjun.miniproject;
 
 import java.io.IOException;
 import java.net.URL;
 
-import com.shreyas.miniproject.controller.MainViewController;
-import com.shreyas.miniproject.service.HotelService;
+import com.arjun.miniproject.controller.MainViewController;
+import com.arjun.miniproject.service.HotelService;
 
 import javafx.application.Application;
 import javafx.scene.Scene;

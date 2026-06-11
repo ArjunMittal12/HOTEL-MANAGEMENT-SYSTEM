@@ -1,11 +1,11 @@
-module com.shreyas.miniproject {
+module com.arjun.miniproject {
     requires transitive javafx.controls;
     requires javafx.graphics;
 
-    exports com.shreyas.miniproject;
-    exports com.shreyas.miniproject.service;
-    exports com.shreyas.miniproject.models;
-    exports com.shreyas.miniproject.controller;
-    exports com.shreyas.miniproject.util;
+    exports com.arjun.miniproject;
+    exports com.arjun.miniproject.service;
+    exports com.arjun.miniproject.models;
+    exports com.arjun.miniproject.controller;
+    exports com.arjun.miniproject.util;
 }
 

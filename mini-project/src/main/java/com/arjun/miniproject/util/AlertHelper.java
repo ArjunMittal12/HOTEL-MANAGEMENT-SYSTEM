@@ -1,4 +1,4 @@
-package com.shreyas.miniproject.util;
+package com.arjun.miniproject.util;
 
 import java.net.URL;
 

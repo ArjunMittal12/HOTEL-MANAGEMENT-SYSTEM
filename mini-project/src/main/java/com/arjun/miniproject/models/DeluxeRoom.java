@@ -1,4 +1,4 @@
-package com.shreyas.miniproject.models;
+package com.arjun.miniproject.models;
 
 /**
  * Deluxe room: base price + 10% surcharge for WiFi and AC.

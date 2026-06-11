@@ -1,4 +1,4 @@
-package com.shreyas.miniproject.models;
+package com.arjun.miniproject.models;
 
 import java.util.ArrayList;
 import java.util.Iterator;

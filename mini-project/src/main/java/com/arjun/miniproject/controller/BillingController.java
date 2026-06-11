@@ -1,14 +1,14 @@
-package com.shreyas.miniproject.controller;
+package com.arjun.miniproject.controller;
 
 import java.util.Arrays;
 
-import com.shreyas.miniproject.HotelApp;
-import com.shreyas.miniproject.models.BillEntry;
-import com.shreyas.miniproject.models.Booking;
-import com.shreyas.miniproject.models.Guest;
-import com.shreyas.miniproject.models.ServiceItem;
-import com.shreyas.miniproject.service.HotelService;
-import com.shreyas.miniproject.util.AlertHelper;
+import com.arjun.miniproject.HotelApp;
+import com.arjun.miniproject.models.BillEntry;
+import com.arjun.miniproject.models.Booking;
+import com.arjun.miniproject.models.Guest;
+import com.arjun.miniproject.models.ServiceItem;
+import com.arjun.miniproject.service.HotelService;
+import com.arjun.miniproject.util.AlertHelper;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
